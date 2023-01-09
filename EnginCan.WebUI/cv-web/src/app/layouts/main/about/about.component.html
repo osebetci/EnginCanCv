@@ -1,8 +1,8 @@
 <div class="container-fluid py-5" id="about">
   <div class="container">
       <div class="position-relative d-flex align-items-center justify-content-center">
-          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Kimim Ben</h1>
-          <h1 class="position-absolute text-uppercase text-primary">Kimim Ben</h1>
+          <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Who Am I</h1>
+          <h1 class="position-absolute  text-primary">Kimim Ben</h1>
       </div>
       <div class="row align-items-center">
           <div class="col-lg-5 pb-4 pb-lg-0">
@@ -10,13 +10,13 @@
           </div>
           <div class="col-lg-7">
               <h3 class="mb-4">Full Stack Developer</h3>
-              <p>Selam &#9995; ben  Engin, Aydın'da doğup, burada büyümeye devam ediyorum. Eğitim hayatım, Aydın Anadolu Meslek Lisesinde Harita-Tapu Kadastro Teknolojileri bölümünden başlayıp, Dokuz Eylül Üniversitesinde Harita Kadastro Teknolojileri ile devam etti ancak zorunlu sayısal yollarını aşamadığım için (trigonometri) kendime yeni yol aramam gerekti ve meraklı olduğum alan "Bilgisayar" fikri aklıma geldi. Araştırdım ve araştırmalarım sonucunda yatay geçiş ile Adnan Menderes Üniversitesi Bilgisayar Programcılığı bölümüne kendimi atadım. Yazılım öğrenmeye ilk önce Python ile başladı ancak sonrasında C# diline başladım. Maalesef ki ülkemizde pandemi başladı ve en çok bana yaradı. Çünkü kendimi evde daha da geliştirme fırsatı yakaladım. Okulum bitmeden ve stajım başlamadan özel bir firmada çalışmaya başladım. Bunların yanında sosyal sorumluluk olarak gönüllü işleriyle uğraşmaya başladım ve bu yolda Haluk Levent'in kurucu olduğu Ahbap Platformuyla tanıştım. Bir dönem gönüllü olarak çalışmalara destek verdim sonrasında Aydın Ağ ve Organizasyon Çalışma Grubu Başkanlığını yürüttüm sonrasında Ahbap Türkiye Ağ ve Org. Yönetimi Kurul Üyesi sonrasında Yönetim Kurulu Başkanlığına geçtim. Görevime büyük bir heyecanla, bütün canlılara dokunmanın sevgisiyle devam ediyorum.</p>
+              <p>{{about.ozetMetin}}</p>
               <div class="row mb-3">
-                  <div class="col-sm-6 py-2"><h6>İsmim: <span class="text-secondary">Engin CAN</span></h6></div>
-                  <div class="col-sm-6 py-2"><h6>Doğum Tarihi: <span class="text-secondary">18 Ağustos 2000</span></h6></div>
-                  <div class="col-sm-6 py-2"><h6>Mezuniyet: <span class="text-secondary">Ön Lisans</span></h6></div>
-                  <div class="col-sm-6 py-2"><h6>Deneyim: <span class="text-secondary">2 Yıl</span></h6></div>
-                  <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">canengin757@gmail.com</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>İsmim: <span class="text-secondary">{{about.fullName}}</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Doğum Tarihi: <span class="text-secondary">{{about.dogumTarih | date: 'dd/MM/yyyy'}}</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Mezuniyet: <span class="text-secondary">{{about.mezuniyetDurum}}</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Deneyim (Yıl): <span class="text-secondary">{{about.deneyimSuresi}}</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">{{about.email}}</span></h6></div>
               </div>
           </div>
       </div>

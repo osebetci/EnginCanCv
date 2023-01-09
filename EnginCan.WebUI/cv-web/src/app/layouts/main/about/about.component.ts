@@ -1,4 +1,6 @@
+import { About } from './models/about.model';
 import { Component, OnInit } from '@angular/core';
+import { AboutService } from './services/about.service';
 
 @Component({
   selector: 'in-about',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  about:About = new About();
+  aboutId:number;
+  constructor(private aboutService : AboutService) { }
 
   ngOnInit() {
+    this.aboutId = 1;
+    this.getAbout(this.aboutId);
+  }
+
+  getAbout(aboutId: number) {
+    this.aboutService.getAbout(aboutId).subscribe((res) => {
+      this.about = res.data;
+     this.about.dogumTarih =  new Date(this.about.dogumTarih);
+      
+    });
   }
 
 }

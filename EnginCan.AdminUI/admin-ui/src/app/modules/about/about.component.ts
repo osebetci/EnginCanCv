@@ -112,8 +112,8 @@ export class AboutComponent implements OnInit {
   getAbout(aboutId: number) {
     this.aboutService.getAbout(aboutId).subscribe((res) => {
       this.about = res.data;
-      this.about.dogumTarih = this.datepipe.transform(this.about.dogumTarih, 'dd-MM-yyyy')
-      console.log( this.about.dogumTarih);
+     this.about.dogumTarih =  new Date(this.about.dogumTarih);
+      
     });
   }
 }
