@@ -1,0 +1,93 @@
+<div class="content">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Kullanıcı Ekle/Güncelle</h3>
+        </div>
+        <div class="card-body">
+          <div class="custom-form">
+            <form id="quickForm" [formGroup]="userForm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputName">Ad *</label>
+                      <input [(ngModel)]="user.name" type="text" name="name" required class="form-control"
+                        formControlName="name" id="exampleInputName" placeholder="İsim Giriniz" required>
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.name.touched || submitted) && formControl.name.errors?.required">
+                        <sup>*</sup>Lütfen bir isim giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputSurname">Soyad *</label>
+                      <input [(ngModel)]="user.surname" type="text" name="surname" required class="form-control"
+                        formControlName="surname" id="exampleInputSurname" placeholder="Soyisim Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.surname.touched || submitted) && formControl.surname.errors?.required">
+                        <sup>*</sup>Lütfen bir soyisim giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputPhone">Telefon Numarası *</label>
+                      <input [(ngModel)]="user.phoneNumber" type="phone" name="phoneNumber" required
+                        class="form-control" formControlName="phoneNumber" id="exampleInputPhone"
+                        placeholder="Telefon Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.phoneNumber.touched || submitted) && formControl.phoneNumber.errors?.required">
+                        <sup>*</sup>Lütfen bir telefon giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputUsername">Kullanıcı Adı *</label>
+                      <input [(ngModel)]="user.username" type="text" name="username" required class="form-control"
+                        formControlName="username" id="exampleInputUsername" placeholder="Kullanıcı Adı Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.username.touched || submitted) && formControl.username.errors?.required">
+                        <sup>*</sup>Lütfen bir telefon numarası giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Mail Adresi *</label>
+                      <input [(ngModel)]="user.email" type="email" name="email" required class="form-control"
+                        formControlName="email" id="exampleInputEmail1" placeholder="Mail Adresi Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.email.touched || submitted) && formControl.email.errors?.required">
+                        <sup>*</sup>Lütfen geçerli bir mail adresi giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Şifre *</label>
+                      <input [(ngModel)]="user.password" type="password" required name="password" class="form-control"
+                        formControlName="password" id="exampleInputPassword1" placeholder="Şifre Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.password.touched || submitted) && formControl.password.errors?.required">
+                        <sup>*</sup>Lütfen geçerli bir mail adresi giriniz!
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary"
+                  (click)="saveUser()">{{user?.id?'Güncelle':'Kaydet'}}</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

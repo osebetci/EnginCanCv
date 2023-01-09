@@ -1,0 +1,637 @@
+@charset "UTF-8";
+/*!
+ * Pale Yellow option
+ * Copyright 2011-2018 Necip SUNMAZ
+ * MAIN COLOR: #D2E99B / ACCENT COLOR: #B3D859 / BASE COLOR: #F3F9E4
+ * Licensed under MIT
+ */
+
+.main-background {
+  background-color: #D2E99B !important
+}
+
+.accent-background {
+  background-color: #B3D859 !important
+}
+
+.base-background {
+  background-color: #F3F9E4 !important
+}
+
+.main-color {
+  color: #D2E99B !important
+}
+
+.accent-color {
+  color: #B3D859 !important
+}
+
+.base-color {
+  color: #F3F9E4 !important
+}
+
+/* Default Classes Start */
+
+.card .card-header {
+  background-color: #D2E99B
+}
+
+.note-card {
+  border-bottom: 25px solid #D2E99B
+}
+
+.landing-body .landing-wrapper #header .header-content {
+  background-color: url("/assets/img/main/landing/landing-main.png") no-repeat #B3D859
+}
+
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-nav li .layout-tabmenu-tooltip .layout-tabmenu-tooltip-text,
+.layout-wrapper .topbar .topbar-menu>li>a,
+.layout-wrapper .topbar .topbar-menu.topbar-menu-visible,
+.splash-screen,
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-nav li .layout-tabmenu-tooltip .layout-tabmenu-tooltip-arrow,
+body .ui-widget-header,
+.layout-wrapper .topbar,
+.notify-footer,
+.landing-body .landing-wrapper #video,
+.login-body .login-panel .login-header,
+.landing-body .landing-wrapper #header .pre-header,
+.landing-body .landing-wrapper #pricing .pricing-content .pricing-box.pricing-basic .pricing-features .pricing-feature-icon,
+.landing-body .landing-wrapper #pricing .pricing-content .pricing-box.pricing-basic .pricing-footer {
+  background-color: #B3D859
+}
+
+.layout-wrapper .layout-sidebar .layout-tabmenu .layout-tabmenu-nav li.active-item {
+  border-left: 4px solid #B3D859
+}
+
+.layout-wrapper .topbar .topbar-menu>li.search-item input:focus~.fa,
+.layout-wrapper .layout-sidebar .layout-tabmenu .layout-tabmenu-nav li.active-item a,
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-contents .layout-submenu-content .navigation-menu li.active-menuitem>a,
+.layout-wrapper .layout-sidebar .layout-tabmenu .layout-tabmenu-contents .layout-tabmenu-content .layout-submenu-content .navigation-menu li.active-menuitem>a,
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-contents .layout-submenu-content .navigation-menu li.active-menuitem>a i:first-child,
+.layout-wrapper .layout-sidebar .layout-tabmenu .layout-tabmenu-contents .layout-tabmenu-content .layout-submenu-content .navigation-menu li a.active-menuitem-routerlink i,
+.layout-wrapper .layout-sidebar .layout-tabmenu .layout-tabmenu-contents .layout-tabmenu-content .layout-submenu-content .navigation-menu li a.active-menuitem-routerlink {
+  color: #B3D859
+}
+
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-contents .layout-submenu-content .navigation-menu li.active-menuitem,.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-contents .layout-submenu-content .navigation-menu li.active-menuitem > ul li.active-menuitem {
+  border-color: #B3D859;
+}
+
+.layout-wrapper.layout-rtl .layout-sidebar .layout-tabmenu .layout-tabmenu-nav li.active-item,
+.layout-wrapper .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-nav li.active-item {
+  border-left: 4px solid #B3D859
+}
+
+.layout-wrapper.layout-rtl .layout-sidebar.layout-sidebar-dark .layout-tabmenu .layout-tabmenu-nav li .layout-tabmenu-tooltip .layout-tabmenu-tooltip-arrow {
+  border-color: transparent transparent transparent #B3D859
+}
+
+.layout-wrapper .topbar .topbar-menu>li.search-item input {
+  background-image: linear-gradient(to bottom, #B3D859, #B3D859), linear-gradient(to bottom, #D2E99B, #D2E99B);
+}
+
+.ui-panel {
+  border: 1px solid #B3D859;
+}
+
+/* DevExpress Theme */
+
+.dx-button-default.dx-state-hover,
+.dx-button-default.dx-state-focused,
+.dx-texteditor.dx-state-hover {
+  opacity: 1;
+  background-color: #B3D859;
+  border-color: #F3F9E4
+}
+
+.dx-button-default {
+  opacity: 0.8;
+  background-color: #B3D859;
+  border-color: #F3F9E4
+}
+
+.dx-widget input,
+.dx-widget textarea {
+  transition: all 0.5s ease;
+  background-color: #F3F9E4
+}
+
+.dx-filterbuilder .dx-filterbuilder-group .dx-filterbuilder-text.dx-filterbuilder-item-field:focus,
+.dx-filterbuilder .dx-filterbuilder-group .dx-filterbuilder-text.dx-filterbuilder-item-field.dx-state-active,
+.dx-scheduler-dropdown-appointments.dx-button,
+.dx-scheduler-dropdown-appointments.dx-button.dx-state-hover,
+.dx-scheduler-dropdown-appointments.dx-button.dx-state-active,
+.dx-scheduler-dropdown-appointments.dx-button.dx-state-focused,
+.dx-desktop-layout-main-menu,
+.dx-badge,
+.dx-switch-on-value .dx-switch-handle:before,
+.dx-switch.dx-state-focused .dx-switch-handle:before,
+.dx-switch.dx-state-hover .dx-switch-handle:before,
+.dx-checkbox-indeterminate .dx-checkbox-icon:before,
+.dx-scheduler-dropdown-appointments,
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-focused,
+.dx-desktop-layout-main-menu .dx-nav-item,
+.dx-list-slide-menu-button-menu,
+.dx-toast-info,
+.dx-progressbar-range,
+.dx-slider-handle,
+.dx-datagrid-drop-highlight>td,
+.dx-datagrid-search-text,
+.dx-treelist-drop-highlight>td,
+.dx-treelist-search-text,
+.dx-gallery-indicator-item-active,
+.dx-gallery-indicator-item-selected,
+.dx-radiobutton-checked .dx-radiobutton-icon-dot,
+.dx-menu-item.dx-state-focused,
+.dx-scheduler-appointment,
+.dx-slider-range.dx-slider-range-visible,
+.dx-device-mobile .dx-list-slide-menu-button-menu,
+.dx-treeview .dx-treeview-node:not(.dx-treeview-item-with-checkbox).dx-state-focused>.dx-treeview-item,
+.dx-device-mobile .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active .dx-list-slide-item-content,
+.dx-device-mobile .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-focused,
+.dx-device-mobile .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active,
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active,
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active .dx-list-slide-item-content {
+  background-color: #B3D859;
+}
+
+.dx-viewport.dx-theme-generic .dx-theme-accent-as-text-color,
+.dx-theme-generic-typography a,
+.dx-datagrid .dx-link,
+.dx-treelist .dx-link,
+.dx-scheduler-work-space-month.dx-scheduler-work-space-count .dx-scheduler-date-table-first-of-month,
+.dx-calendar-navigator-next-view.dx-button .dx-icon,
+.dx-calendar-navigator-next-month.dx-button .dx-icon,
+.dx-calendar-navigator-previous-view.dx-button .dx-icon,
+.dx-scheduler-time-panel-cell.dx-scheduler-time-panel-current-time-cell,
+.dx-calendar-navigator-previous-month.dx-button .dx-icon,
+.dx-treelist-filter-panel .dx-icon-filter,
+.dx-treelist-filter-panel .dx-treelist-filter-panel-text,
+.dx-treelist-filter-panel .dx-treelist-filter-panel-clear-filter,
+.dx-datagrid-filter-panel .dx-icon-filter,
+.dx-scheduler-header-panel-cell.dx-scheduler-header-panel-current-time-cell,
+.dx-datagrid-filter-panel .dx-datagrid-filter-panel-text,
+.dx-datagrid-filter-panel .dx-datagrid-filter-panel-clear-filter,
+.dx-checkbox-checked .dx-checkbox-icon {
+  color: #B3D859;
+  text-decoration: none;
+}
+
+.dx-viewport.dx-theme-generic .dx-theme-accent-as-background-color {
+  background-color: #B3D859;
+  fill: #B3D859;
+}
+
+.dx-scheduler-dropdown-appointment {
+  border-left: 5px solid #B3D859;
+}
+
+.dx-rtl .dx-scheduler-dropdown-appointment {
+  border-right: 3px solid #B3D859;
+}
+
+.dx-datagrid-focus-overlay,
+.dx-datagrid-filter-row .dx-menu-item.dx-state-focused:after,
+.dx-treelist-focus-overlay,
+.dx-treelist-filter-row .dx-menu-item.dx-state-focused:after,
+.dx-treelist-filter-range-overlay .dx-overlay-content .dx-texteditor.dx-state-focused:after,
+.dx-datagrid-filter-range-overlay .dx-overlay-content .dx-texteditor.dx-state-focused:after {
+  border: 2px solid #B3D859;
+}
+
+.dx-scheduler-view-switcher.dx-tabs .dx-tab.dx-state-focused:after {
+  border-top: 1px solid #B3D859;
+}
+
+.dx-state-focused.dx-accordion-item,
+.dx-texteditor.dx-state-focused,
+.dx-texteditor.dx-state-active,
+.dx-viewport.dx-theme-generic .dx-theme-accent-as-border-color,
+.dx-switch.dx-state-active .dx-switch-container,
+.dx-switch.dx-state-focused .dx-switch-container,
+.dx-pivotgridfieldchooser .dx-area-fields.dx-drag-target {
+  border-color: #B3D859;
+}
+
+.dx-progressbar-range,
+.dx-slider-range.dx-slider-range-visible,
+.dx-tab.dx-state-focused:after,
+.dx-gallery-indicator-item,
+.dx-tabpanel.dx-state-focused .dx-multiview-wrapper,
+.dx-treeview .dx-treeview-node.dx-treeview-item-with-checkbox.dx-state-focused>.dx-checkbox .dx-checkbox-icon,
+.dx-radiobutton.dx-state-focused:not(.dx-state-active) .dx-radiobutton-icon:before,
+.dx-list.dx-list-select-decorator-enabled .dx-list-item.dx-state-focused .dx-radiobutton-icon:before,
+.dx-list.dx-list-select-decorator-enabled .dx-list-item.dx-state-focused .dx-checkbox-icon,
+.dx-checkbox.dx-state-focused .dx-checkbox-icon,
+.dx-device-mobile .dx-list.dx-list-select-decorator-enabled .dx-list-item.dx-state-focused .dx-radiobutton-icon:before,
+.dx-device-mobile .dx-list.dx-list-select-decorator-enabled .dx-list-item.dx-state-focused .dx-checkbox-icon {
+  border: 1px solid #B3D859;
+}
+
+.dx-calendar-cell.dx-calendar-selected-date,
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today {
+  -webkit-box-shadow: inset 0px 0px 0px 1000px #B3D859;
+  -moz-box-shadow: inset 0px 0px 0px 1000px #B3D859;
+  box-shadow: inset 0px 0px 0px 1000px #B3D859;
+}
+
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-contoured-date,
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today.dx-calendar-contoured-date {
+  box-shadow: inset 0px 0px 0px 1px #8ebbe6, inset 0px 0px 0px 1000px #B3D859;
+}
+
+.dx-tabpanel.dx-state-focused .dx-tab-selected:after {
+  border-top: 1px solid #B3D859;
+  border-right: 1px solid #B3D859;
+  border-left: 1px solid #B3D859;
+}
+
+.dx-nav-item.dx-state-focused,
+.dx-rtl .dx-nav-item.dx-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px #B3D859;
+  -moz-box-shadow: inset 0 0 0 1px #B3D859;
+  box-shadow: inset 0 0 0 1px #B3D859;
+}
+
+.dx-progressbar-animating-container,
+.dx-rtl .dx-progressbar .dx-progressbar-animating-container,
+.dx-rtl.dx-progressbar .dx-progressbar-animating-container {
+  background-image: -webkit-linear-gradient(-90deg, transparent 5%, #B3D859, transparent 95%);
+  background-image: -moz-linear-gradient(-90deg, transparent 5%, #B3D859, transparent 95%);
+  background-image: -ms-linear-gradient(-90deg, transparent 5%, #B3D859, transparent 95%);
+  background-image: -o-linear-gradient(-90deg, transparent 5%, #B3D859, transparent 95%);
+  background-image: linear-gradient(-90deg, transparent 5%, #B3D859, transparent 95%);
+}
+
+.dx-tabpanel.dx-state-focused .dx-tabs-scrollable .dx-tab:not(.dx-tab-selected):before {
+  border-bottom: 1.5px solid #B3D859;
+}
+
+.dx-scheduler-all-day-table-cell.dx-scheduler-focused-cell,
+.dx-scheduler-date-table-cell.dx-scheduler-focused-cell {
+  box-shadow: inset 0 0 0 1px #B3D859;
+}
+
+.dx-datagrid-borders>.dx-datagrid-headers,
+.dx-datagrid-borders>.dx-datagrid-rowsview,
+.dx-datagrid-borders>.dx-datagrid-total-footer {
+  border-left: 1px solid #F3F9E4;
+  border-right: 1px solid #F3F9E4;
+}
+
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-data-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-row-cell,
+.dx-treelist-borders>.dx-treelist-rowsview,
+.dx-treelist-borders>.dx-treelist-total-footer,
+.dx-list-border-visible .dx-list-select-all,
+.dx-device-mobile .dx-list-border-visible .dx-list-select-all,
+.dx-dateview-item-selected-frame:before,
+.dx-toolbar-menu-section,
+.dx-popup-title,
+.dx-lookup-validation-message,
+.dx-tagbox-popup-wrapper .dx-list-select-all,
+.dx-accordion-item:last-child,
+.dx-datagrid .dx-row-lines>td,
+.dx-datagrid-headers,
+.dx-datagrid-headers .dx-datagrid-table .dx-row>td,
+.dx-datagrid-header-panel,
+.dx-datagrid-rowsview .dx-row.dx-edit-row:first-child>td,
+.dx-row.dx-datagrid-group-footer.dx-column-lines,
+.dx-treelist .dx-row-lines>td,
+.dx-treelist-headers,
+.dx-treelist-headers .dx-treelist-table .dx-row>td,
+.dx-treelist-header-panel,
+.dx-treelist-rowsview .dx-row.dx-edit-row:first-child>td,
+.dx-menu-adaptive-mode .dx-treeview-node-container:first-child>.dx-treeview-node,
+.dx-treeview .dx-treeview-select-all-item,
+.dx-datagrid-borders>.dx-datagrid-rowsview,
+.dx-datagrid-borders>.dx-datagrid-total-footer {
+  border-bottom: 1px solid #F3F9E4;
+}
+
+.dx-datagrid-borders>.dx-datagrid-pager,
+.dx-datagrid-borders>.dx-datagrid-headers,
+.dx-datagrid-borders>.dx-datagrid-filter-panel,
+.dx-treelist-borders>.dx-treelist-pager,
+.dx-treelist-borders>.dx-treelist-headers,
+.dx-treelist-filter-panel,
+.dx-dateview-item-selected-frame:after,
+.dx-datagrid-rowsview,
+.dx-desktop-layout-main-menu .dx-nav-item.dx-tab-selected,
+.dx-datagrid-total-footer,
+.dx-form-group-with-caption>.dx-form-group-content,
+.dx-treelist-bottom-load-panel,
+.dx-treelist-total-footer,
+.dx-treelist-rowsview,
+.dx-datagrid-bottom-load-panel,
+.dx-pivotgrid-fields-container .dx-area-field.dx-area-box,
+.dx-row.dx-datagrid-group-footer>td,
+.dx-treelist-borders>.dx-treelist-filter-panel,
+.dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+.dx-pivotgrid.dx-row-lines .dx-pivotgrid-area td,
+.dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-expand-border,
+.dx-datagrid-filter-panel {
+  border-top: 1px solid #F3F9E4;
+}
+
+.dx-datagrid-borders>.dx-datagrid-filter-panel {
+  border-top-width: 0;
+  border-left: 1px solid #F3F9E4;
+  border-right: 1px solid #F3F9E4;
+  border-bottom: 1px solid #F3F9E4;
+}
+
+.dx-datagrid .dx-datagrid-rowsview .dx-data-row td.dx-pointer-events-none,
+.dx-datagrid .dx-datagrid-rowsview .dx-freespace-row td.dx-pointer-events-none,
+.dx-datagrid .dx-datagrid-headers .dx-row td.dx-pointer-events-none {
+  border-left: 2px solid #F3F9E4;
+  border-right: 2px solid #F3F9E4;
+}
+
+.dx-rtl .dx-datagrid .dx-datagrid-rowsview .dx-data-row td.dx-pointer-events-none,
+.dx-rtl .dx-datagrid .dx-datagrid-rowsview .dx-freespace-row td.dx-pointer-events-none,
+.dx-rtl .dx-datagrid .dx-datagrid-headers .dx-row td.dx-pointer-events-none {
+  border-left: 2px solid #F3F9E4;
+}
+
+.dx-pivotgrid .dx-area-row-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-column-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-column-header,
+.dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-area-data tbody td,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-area-description-cell,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-data-header,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-area-row-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-data-cell,
+.dx-pivotgrid .dx-pivotgrid-horizontal-headers.dx-vertical-scroll,
+.dx-pivotgrid .dx-pivotgrid-vertical-headers td,
+.dx-pivotgrid .dx-area-description-cell {
+  border-right: 1px solid #F3F9E4;
+}
+
+.dx-datagrid-rowsview .dx-row.dx-edit-row>td,
+.dx-treelist-rowsview .dx-row.dx-edit-row>td,
+.dx-treelist-rowsview .dx-master-detail-row>.dx-treelist-group-space,
+.dx-treelist-rowsview .dx-master-detail-row .dx-master-detail-cell,
+.dx-datagrid-rowsview .dx-master-detail-row>.dx-datagrid-group-space,
+.dx-datagrid-rowsview .dx-master-detail-row .dx-master-detail-cell {
+  border-top: 1px solid #F3F9E4;
+  border-bottom: 1px solid #F3F9E4;
+}
+
+.dx-treelist-borders>.dx-treelist-headers,
+.dx-treelist-borders>.dx-treelist-rowsview,
+.dx-tab-selected:after,
+.dx-datagrid .dx-column-lines>td,
+.dx-treelist .dx-column-lines>td,
+.dx-treelist-borders>.dx-treelist-filter-panel,
+.dx-treelist-borders>.dx-treelist-total-footer {
+  border-left: 1px solid #F3F9E4;
+  border-right: 1px solid #F3F9E4;
+}
+
+.dx-pivotgrid .dx-bottom-border,
+.dx-pivotgrid .dx-area-description-cell,
+.dx-pivotgrid .dx-area-column-cell {
+  border-bottom: 1px solid #F3F9E4;
+}
+
+.dx-pivotgrid .dx-group-connector {
+  background-color: #F3F9E4;
+}
+
+.dx-rtl.dx-pivotgrid .dx-area-row-cell,
+.dx-rtl.dx-pivotgrid .dx-area-description-cell,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-area-data tbody td:first-child,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-vertical-headers td,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers.dx-vertical-scroll,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-horizontal-headers td:first-child,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-area-column-cell,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-column-header,
+.dx-rtl.dx-pivotgrid .dx-pivotgrid-border .dx-area-data-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-data-header,
+.dx-pivotgrid .dx-pivotgrid-border .dx-filter-header,
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-description-cell,
+.dx-pivotgrid .dx-pivotgrid-border .dx-area-row-cell,
+.dx-pivotgrid .dx-pivotgrid-area-data tbody td {
+  border-left: 1px solid #F3F9E4;
+}
+
+.dx-pivotgrid .dx-pivotgrid-vertical-headers .dx-row-total,
+.dx-pivotgrid .dx-pivotgrid-area-data .dx-row-total {
+  border-top: 1px solid #F3F9E4;
+  border-bottom: 1px solid #F3F9E4;
+}
+
+.dx-rtl .dx-tab-selected:not(.dx-state-focused)+.dx-tab-selected:not(.dx-state-focused):after {
+  border-left: 1px solid #F3F9E4;
+  border-right: 1px solid #f7f7f7;
+}
+
+.dx-viewport.dx-theme-generic .dx-theme-border-color-as-text-color {
+  color: #F3F9E4;
+}
+
+.dx-calendar-body thead tr th {
+  -webkit-box-shadow: inset 0px -1px 0px #F3F9E4;
+  -moz-box-shadow: inset 0px -1px 0px #F3F9E4;
+  box-shadow: inset 0px -1px 0px #F3F9E4;
+}
+
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row>td.dx-pointer-events-none,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover>td.dx-pointer-events-none,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row>tr>td.dx-pointer-events-none,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover>tr>td.dx-pointer-events-none {
+  border-left-color: #F3F9E4;
+}
+
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row>td,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover>td,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row>tr>td,
+.dx-rtl .dx-treelist-rowsview .dx-selection.dx-row:hover>tr>td {
+  border-right-color: #F3F9E4;
+}
+
+.dx-treelist-pager {
+  border-top: 3px double #F3F9E4;
+}
+
+.dx-treelist-rowsview .dx-selection.dx-row.dx-row-lines>td,
+.dx-treelist-rowsview .dx-selection.dx-row:hover.dx-row-lines>td,
+.dx-treelist-rowsview .dx-selection.dx-row.dx-row-lines>tr>td,
+.dx-treelist-rowsview .dx-selection.dx-row:hover.dx-row-lines>tr>td {
+  border-bottom-color: #F3F9E4;
+}
+
+.dx-treelist-rowsview .dx-selection.dx-row.dx-column-lines>td,
+.dx-treelist-rowsview .dx-selection.dx-row:hover.dx-column-lines>td,
+.dx-treelist-rowsview .dx-selection.dx-row.dx-column-lines>tr>td,
+.dx-treelist-rowsview .dx-selection.dx-row:hover.dx-column-lines>tr>td {
+  border-left-color: #F3F9E4;
+  border-right-color: #F3F9E4;
+}
+
+.dx-datagrid-rowsview .dx-row.dx-group-row td {
+  border-top-color: #F3F9E4;
+  border-bottom-color: #F3F9E4;
+}
+
+.dx-treelist-rowsview .dx-selection.dx-row>td.dx-pointer-events-none,
+.dx-treelist-rowsview .dx-selection.dx-row:hover>td.dx-pointer-events-none,
+.dx-treelist-rowsview .dx-selection.dx-row>tr>td.dx-pointer-events-none,
+.dx-treelist-rowsview .dx-selection.dx-row:hover>tr>td.dx-pointer-events-none {
+  border-left-color: #F3F9E4;
+  border-right-color: #F3F9E4;
+}
+
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row>td,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover>td,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row>tr>td,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover>tr>td {
+  border-right-color: #F3F9E4;
+}
+
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row>td.dx-pointer-events-none,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover>td.dx-pointer-events-none,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row>tr>td.dx-pointer-events-none,
+.dx-rtl .dx-datagrid-rowsview .dx-selection.dx-row:hover>tr>td.dx-pointer-events-none {
+  border-left-color: #F3F9E4;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row.dx-row-lines>td,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover.dx-row-lines>td,
+.dx-datagrid-rowsview .dx-selection.dx-row.dx-row-lines>tr>td,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover.dx-row-lines>tr>td {
+  border-bottom-color: #F3F9E4;
+}
+
+.dx-datagrid-pager {
+  border-top: 3px double #F3F9E4;
+}
+
+.dx-accordion-item {
+  border-top-color: #F3F9E4;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row.dx-column-lines>td,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover.dx-column-lines>td,
+.dx-datagrid-rowsview .dx-selection.dx-row.dx-column-lines>tr>td,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover.dx-column-lines>tr>td,
+.dx-datagrid-rowsview .dx-selection.dx-row>td.dx-pointer-events-none,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover>td.dx-pointer-events-none,
+.dx-datagrid-rowsview .dx-selection.dx-row>tr>td.dx-pointer-events-none,
+.dx-datagrid-rowsview .dx-selection.dx-row:hover>tr>td.dx-pointer-events-none {
+  border-left-color: #F3F9E4;
+  border-right-color: #F3F9E4;
+}
+
+.dx-colorview-palette-cell,
+.dx-colorview-alpha-channel-border,
+.dx-colorview-hue-scale-wrapper,
+.dx-colorview-color-preview-container {
+  box-shadow: 0 0 0 1px #F3F9E4;
+}
+
+.dx-slider-bar {
+  background: #F3F9E4;
+}
+
+.dx-list-group-header {
+  border-top: 0px solid #F3F9E4;
+  border-bottom: 2px solid #F3F9E4;
+}
+
+.dx-device-mobile .dx-list-item,
+.dx-device-mobile .dx-list .dx-empty-message {
+  border-top: 0px solid #F3F9E4;
+}
+
+.dx-device-mobile .dx-list-group-header {
+  border-top: 0px solid #F3F9E4;
+  border-bottom: 2px solid #F3F9E4;
+}
+
+.dx-list-item,
+.dx-list .dx-empty-message {
+  border-top: 0px solid #F3F9E4;
+}
+
+.dx-viewport.dx-theme-generic .dx-theme-border-color-as-background-color,
+.dx-context-menu .dx-menu-separator {
+  background-color: #F3F9E4;
+}
+
+.dx-viewport.dx-theme-generic .dx-theme-border-color,
+.dx-button,
+.dx-popup-title .dx-closebutton,
+.dx-accordion-item-opened,
+.dx-colorbox-color-result-preview,
+.dx-calendar-navigator .dx-button {
+  border-color: #F3F9E4;
+}
+
+.dx-filterbuilder .dx-filterbuilder-group .dx-filterbuilder-text .dx-filterbuilder-item-value-text:focus,
+.dx-filterbuilder .dx-filterbuilder-group .dx-filterbuilder-text .dx-filterbuilder-item-value-text.dx-state-active {
+  background-color: #F3F9E4;
+}
+
+.dx-rtl .dx-treelist-container .dx-treelist-rowsview .dx-data-row td.dx-pointer-events-none,
+.dx-rtl .dx-treelist-container .dx-treelist-rowsview .dx-freespace-row td.dx-pointer-events-none,
+.dx-rtl .dx-treelist-container .dx-treelist-headers .dx-row td.dx-pointer-events-none {
+  border-left: 2px solid #F3F9E4;
+}
+
+.dx-treelist-container .dx-treelist-rowsview .dx-data-row td.dx-pointer-events-none,
+.dx-treelist-container .dx-treelist-rowsview .dx-freespace-row td.dx-pointer-events-none,
+.dx-treelist-container .dx-treelist-headers .dx-row td.dx-pointer-events-none {
+  border-left: 2px solid #F3F9E4;
+  border-right: 2px solid #F3F9E4;
+}
+
+.dx-checkbox-icon,
+.dx-switch-container,
+.dx-tabs,
+.dx-texteditor,
+.dx-list-border-visible,
+.dx-list-context-menucontent,
+.dx-device-mobile .dx-list-border-visible,
+.dx-device-mobile .dx-list-context-menucontent,
+.dx-popup-wrapper .dx-state-focused.dx-overlay-content,
+.dx-popup-wrapper>.dx-overlay-content,
+.dx-popover-arrow:after,
+.dx-progressbar-container,
+.dx-progressbar-animating-container,
+.dx-tooltip-wrapper .dx-overlay-content,
+.dx-tooltip-wrapper.dx-popover-wrapper .dx-popover-arrow:after,
+.dx-lookup,
+.dx-datagrid-group-panel .dx-group-panel-item,
+.dx-treelist-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item,
+.dx-treelist-filter-range-overlay .dx-overlay-content,
+.dx-context-menu-container-border,
+.dx-menu-adaptive-mode .dx-treeview,
+.dx-context-menu .dx-submenu,
+.dx-treeview.dx-treeview-border-visible,
+.dx-tabpanel .dx-multiview-wrapper,
+.dx-loadpanel-content,
+.dx-radiobutton-icon:before,
+.dx-datagrid-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item,
+.dx-datagrid-filter-range-overlay .dx-overlay-content,
+.dx-tabs-scrollable .dx-tabs-wrapper,
+.dx-pivotgridfieldchooser .dx-area .dx-area-fields,
+.dx-pivotgrid .dx-pivotgrid-horizontal-headers td {
+  border: 1px solid #F3F9E4;
+}
+
+.dx-fileuploader-dragover .dx-fileuploader-input-container {
+  border: 3px dashed #F3F9E4;
+}
+
+.dx-desktop-layout-toolbar {
+  border-bottom-color: #F3F9E4;
+}
+
+.dx-splitter {
+  border-right-color: #F3F9E4;
+}

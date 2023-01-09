@@ -1,0 +1,86 @@
+<div class="upload-area">
+  <label class="image-preview" [ngClass]="{'has-content': selectedValue}">
+    <div class="preview" (click)="showFile()"
+      [ngStyle]="{'background-image': selectedValue ? 'url('+(environment.api.contentRootPath+'images/q_75,w_75,h_90/'+ selectedValue)+')' : 'unset'}">
+    </div>
+  </label>
+  <div class="action">
+    <input type="text" name="name" required class="form-control" [(ngModel)]="fileName" placeholder="Dosya Seçiniz!">
+
+    <ng-container *ngIf="!readonly">
+      <button class="btn btn-link mt-2" (click)="imageInput.click()">
+        <i class="fa fa-picture-o"></i>Fotoğraf seç
+      </button>
+      <input #imageInput type="file" hidden [attr.accept]="accept" (change)="fileChangeEvent($event)" />
+      <button class="btn btn-link" (click)="clear()" [ngClass]="{'disabled': !selectedValue}">
+        <i class="fa fa-ban"></i>Fotoğraf temizle
+      </button>
+    </ng-container>
+
+  </div>
+</div>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Fotoğraf Düzenle</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div [ngClass]="{'col-md-6': openHelper, 'col-md-12': !openHelper}">
+        <image-cropper [imageChangedEvent]="imageChangedEvent"
+                       [ngStyle]="{'height': (0 - 170)+ 'px', 'width': 'max-content' }" [aspectRatio]="aspectRatio"
+                       [maintainAspectRatio]="enableAspectRatio" [imageQuality]="quality"
+                       [resizeToWidth]="resizeToWidth" [roundCropper]="false" format="jpg" outputType="both"
+                       (imageCropped)="imageCropped($event)" [style.display]="cropperReady ? null : 'none'"
+                       (imageLoaded)="imageLoaded()"></image-cropper>
+      </div>
+      <div class="col-md-6" *ngIf="openHelper">
+        <div class="crop-helper">
+          <img class="crop-area" src="/assets/img/img-cropper/profile-area.svg" alt="Profil kesme yardımcısı.">
+          <img class="cropped-img" [src]="croppedImage" />
+          <span class="photo-width">{{helperData?.photoWidth}}</span>
+          <span class="photo-height">{{helperData?.photoHeight}}</span>
+          <span class="face-circle">{{helperData?.faceCircle}}</span>
+          <span class="face-circle-dot">{{helperData?.faceCircleDot}}</span>
+          <small class="text-danger">**Resminizin bulanık olmamasına dikkat ediniz.</small>
+          <hr class="mb-2 mt-2">
+          <h4><i class="fa fa-question-circle mr-2"></i>Talimatlar</h4>
+          <div class="d-flex mt-3">
+            <img src="/assets/img/img-cropper/crop.svg" height="50" alt="Seçim Alanı" class="mr-2">
+            <p>
+              Fotoğrafın üzerinde oluşan yandaki resimde gördüğünüz çizgiler kırpma
+              sınırlarını belirler.
+            </p>
+          </div>
+          <p>
+            Köşelerinden tutarak (
+            <img src="/assets/img/img-cropper/resize.svg" height="15" alt="Seçim Alanı" class="mr-2">)
+            kırpma alanını küçültüp büyütebilirsiniz.
+          </p>
+          <p>
+            Üzerine geldiğinizde sürükleme işleciyle (
+            <img src="/assets/img/img-cropper/move.svg" height="15" alt="Seçim Alanı" class="mr-2">)
+            sınırlarını belirlemiş olduğunuz alanı fotoğrafınızın istediğiğiniz bölümüne taşıyabilirsiniz.
+          </p>
+          <p>
+            Yaptığınız işlemleri yukarıdaki kırpma alanı yardımcılarını kullanarak resminizin sağında bulunan
+            alandan sonucunu eş zamanlı olarak görüntüleyebilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-success mr-2" (click)="saveCroppedImage();modal.close('iptal')">
+      <i class="fa fa-save"></i>Kaydet
+    </button>
+    <button class="btn btn-light" (click)="modal.close('iptal')">
+      <i class="fa fa-ban"></i>İptal
+    </button>
+  </div>
+</ng-template>
+
+
+<hr>

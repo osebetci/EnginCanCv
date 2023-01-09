@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EnginCan.Api</name>
+    </assembly>
+    <members>
+        <member name="M:EnginCan.Api.Controllers.Docs.ImagesController.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment,EnginCan.Core.Helpers.Files.IImageProccess)">
+            <summary>
+            Yapıcı method.
+            </summary>
+            <param name="customDirectory"></param>
+            <param name="imageProccess"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Docs.ImagesController.Get(System.String)">
+            <summary>
+            Resimleri croplar ve görüntüler
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Docs.ImagesController.GetQuery(System.String,System.String)">
+            <summary>
+            Resimleri croplamaya ve görüntülenmesini sağlayan uçtur.
+            </summary>
+            <param name="query"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Docs.ImagesController.Upload(EnginCan.Dto.Shared.UploadImage)">
+            <summary>
+            Resimlerin yüklenmesini sağlayan uçtur.
+            </summary>
+            <param name="post"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.#ctor(EnginCan.Bll.EntityCore.Abstract.Employees.IEmployeeRepository)">
+            <summary>
+            Yapıcı
+            </summary>
+            <param name="employeeRepository"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.GetAllEmployee">
+            <summary>
+            Tüm çalışan verilerini getirir.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.GetById(System.Int32)">
+            <summary>
+            Tekil bilgisine göre çalışan döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.PostEmployee(EnginCan_Entity.Models.Employees.Employee)">
+            <summary>
+            Yeni Çalışan kaydı
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.UpdateEmployee(EnginCan_Entity.Models.Employees.Employee)">
+            <summary>
+            Çalışan kaydını değişen alanlara göre günceller.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            Çalışan kaydını siler
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Employees.EmployeeController.GetAllEmployeeDetailTable">
+            <summary>
+            Tüm personelleri gride basmak amacıyla detay bilgileri ile birlikte döndürür.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.#ctor(EnginCan.Bll.EntityCore.Abstract.Systems.IOrganizasyonRepository)">
+            <summary>
+            Yapıcı
+            </summary>
+            <param name="employeeRepository"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.GetAllOrganizasyon">
+            <summary>
+            Tüm organizasyon verilerini getirir.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.GetAllOrganizasyoneDetailTable">
+            <summary>
+            Tüm organizasyon verilerini getirir.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.GetById(System.Int32)">
+            <summary>
+            Tekil bilgisine göre organizasyon döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.PostOrganizasyon(EnginCan_Entity.Models.Systems.Organizasyon)">
+            <summary>
+            Yeni organizasyon kaydı
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.UpdateOrganizasyon(EnginCan_Entity.Models.Systems.Organizasyon)">
+            <summary>
+            organizasyon kaydını değişen alanlara göre günceller.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.OrganizasyonController.DeleteOrganizasyon(System.Int32)">
+            <summary>
+            organizasyon kaydını siler
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.#ctor(EnginCan.Bll.EntityCore.Abstract.Systems.IPageRepository,EnginCan.Bll.EntityCore.Abstract.Systems.IPagePermissionRepository,EnginCan.Core.Middleware.ICustomHttpContextAccessor)">
+            <summary>
+            Yapıcı method.
+            </summary>
+            <param name="service"></param>
+            <param name="pagePermissionRepository"></param>
+            <param name="customHttpContextAccessor"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.GetAllPagePermissions">
+            <summary>
+            Tüm Page verilerini getirir.
+            </summary>
+            <param name="sicilId">Bordro tekil bilgisidir.</param>
+            <returns>Istenen bordro detay bilgisini döndürür.</returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.GetById(System.Int32)">
+            <summary>
+            Tekil bilgisine göre page döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.PostPage(EnginCan.Entity.Models.Systems.Page)">
+            <summary>
+            Yeni page oluşturur
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.Update(EnginCan.Entity.Models.Systems.Page)">
+            <summary>
+            Page Günceller
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.DeletePage(System.Int32)">
+            <summary>
+            Page Siler
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PageController.GetPermissionPage">
+            <summary>
+            Tüm Page verilerini getirir.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.#ctor(EnginCan.Bll.EntityCore.Abstract.Systems.IPagePermissionRepository,EnginCan.Core.Middleware.ICustomHttpContextAccessor)">
+            <summary>
+            Yapıcı method.
+            </summary>
+            <param name="service"></param>
+            <param name="customHttpContextAccessor"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.GetAllPagePermissions">
+            <summary>
+            Tüm Page verilerini getirir.
+            </summary>
+            <param name="sicilId">Bordro tekil bilgisidir.</param>
+            <returns>Istenen bordro detay bilgisini döndürür.</returns>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.GetById(System.Int32)">
+            <summary>
+            Tekil bilgisine göre page döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.PostPagePermission(EnginCan.Dto.Shared.CustomPostPagePermission)">
+            <summary>
+            Yeni page oluşturur
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.CanActivate(System.Int32)">
+            <summary>
+            Tekil bilgisine göre page döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.UpdatePagePermission(EnginCan.Entity.Models.Systems.PagePermission)">
+            <summary>
+            Page Günceller
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Systems.PagePermissionController.DeletePagePermission(System.Int32)">
+            <summary>
+            Page Siler
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.#ctor(EnginCan.Bll.EntityCore.Abstract.Users.IUserRepository,EnginCan.Bll.EntityCore.Abstract.Systems.IPagePermissionRepository,EnginCan.Bll.EntityCore.Abstract.Users.IUserRoleRepository,EnginCan.Bll.EntityCore.Abstract.Systems.ILookupRepository,EnginCan.Bll.EntityCore.Abstract.Users.IRoleRepository,EnginCan.Core.Middleware.ICustomHttpContextAccessor)">
+            <summary>
+            Yapıcı method.
+            </summary>
+            <param name="service"></param>
+            <param name="pagePermissionRepository"></param>
+            <param name="userRoleRepository"></param>
+            <param name="lookupRepository"></param>
+            <param name="roleRepository"></param>
+            <param name="customHttpContextAccessor"></param>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.GetAllUser">
+            <summary>
+            Tüm User verilerini getirir.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.GetById(System.Int32)">
+            <summary>
+            Tekil bilgisine göre user döndürür
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.LoginUser">
+            <summary>
+            Giriş yapan kullanıcı bilgilerini döndürür.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.PostUser(EnginCan.Entity.Models.Users.User)">
+            <summary>
+            Yeni kullanıcı kaydı
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.UpdateUser(EnginCan.Entity.Models.Users.User)">
+            <summary>
+            Kullanıcı kaydını değişen alanlara göre günceller.
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.Authenticate(EnginCan.Dto.Systems.Login)">
+            <summary>
+            Yeni giriş kaydı
+            </summary>
+        </member>
+        <member name="M:EnginCan.Api.Controllers.Users.UserController.GetAllUsersForSelection">
+            <summary>
+            Select boxlar için kullanıcı listesi döndürür
+            </summary>
+        </member>
+        <member name="P:YurtYonetim.Api.Startup._configuration">
+            <summary>
+            Confirations
+            </summary>
+        </member>
+        <member name="M:YurtYonetim.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Starter
+            </summary>
+            <param name="configuration"></param>
+        </member>
+    </members>
+</doc>

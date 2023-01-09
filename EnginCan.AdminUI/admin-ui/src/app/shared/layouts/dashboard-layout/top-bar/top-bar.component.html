@@ -1,0 +1,159 @@
+<header class="top-bar">
+  <div class="top-wrapper" [ngClass]="{'mini-navbar': environment.isMiniNavbar}">
+  </div>
+  <div class="w-100 pl-3 pr-3 d-flex justify-content-between align-items-center">
+      <div class="top-bar-area">
+          <button type="button" (click)="openMobileMenu()"
+              class="btn btn-brand btn-elevate btn-icon btn-mobile-navbar">
+              <i class="fa fa-bars"></i>
+          </button>
+          <div class="qr-image">
+              <img src="/assets/img/qr.png" class="w-100" alt="">
+          </div>
+      </div>
+      <div class="btn-group">
+          <div class="top-bar-area dropdown notification">
+              <a href="javascript:;" data-toggle="dropdown" class="btn">
+                  <i class="fa fa-bell-o p-0">
+                      <span *ngIf="newNotificationCount > 0"
+                          class="notification-badge badge badge-danger">{{newNotificationCount}}</span>
+                  </i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-anim dropdown-menu-xl p-0"
+                  x-placement="bottom-end">
+                  <form>
+                      <div class="action-card bg-light">
+                          <div class="action-card-avatar"></div>
+                          <div class="action-card-text">
+                              Tüm Bildirimler
+                          </div>
+                          <div class="pl-1">
+                              <span *ngIf="newNotificationCount > 0"
+                                  class="btn btn-label-danger">{{newNotificationCount}}
+                                  yeni</span>
+                          </div>
+                      </div>
+                      <div
+                          class="footer bg-light d-flex justify-content-between align-items-center pt-2 pb-2 pl-3 pr-3">
+                          <button type="button" (click)="allReadNotification()" class="btn btn-primary">Tümünü Okundu
+                              Olarak
+                              İşaretle</button>
+                          <button type="button" (click)="reloadNotificationDataSource()"
+                              class="btn btn-outline-brand btn-elevate btn-circle btn-icon">
+                              <i class="flaticon-refresh"></i>
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+          <div class="top-bar-area dropdown">
+              <div class="top-bar-header" data-toggle="dropdown">
+                  <span *ngIf="!loginUser?.image" class="user-name-badge">{{(loginUser?.name ?
+                      loginUser?.name.charAt(0).toUpperCase() : '')}}</span>
+                  <img class="user-image" *ngIf="loginUser?.image" alt="profil fotoğrafı"
+                      [src]="environment.api.contentRootPath+'images/q_75,w_47,h_51/'+ loginUser?.image">
+              </div>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-anim dropdown-menu-xl py-0"
+                  x-placement="bottom-end">
+                  <div class="action-card bg-light">
+                      <div class="action-card-avatar"></div>
+                      <div class="action-card-text">
+                          Hesap İşlemleri
+                      </div>
+                  </div>
+                  <div class="action-card">
+                      <div class="action-card-avatar">
+                          <span *ngIf="!loginUser?.image">{{(loginUser?.name ? loginUser?.name.charAt(0).toUpperCase()
+                              : '')}}</span>
+                          <img *ngIf="loginUser?.image" alt="profile-photo"
+                              [src]="environment.api.contentRootPath+'images/q_75,w_47,h_51/'+ loginUser?.image">
+                      </div>
+                      <div class="action-card-text">
+                          {{loginUser?.name }} {{loginUser?.surname }}
+                      </div>
+                      <div class="pl-1">
+                          <span *ngIf="newNotificationCount > 0" class="btn btn-label-danger">{{newNotificationCount}}
+                              yeni</span>
+                      </div>
+                  </div>
+                  <div class="action-list">
+                      <a (click)="bildirimlerPopupVisible=true" class="action-list-item">
+                          <div class="action-list-item-icon">
+                              <i class="fa fa-bell-o" aria-hidden="true"></i>
+                          </div>
+                          <div class="action-list-item-detail">
+                              <div class="action-list-item-detail-title">
+                                  Bildirimlerim
+                              </div>
+                              <div class="action-list-item-detail-desc">
+                                  Gelen giden bildirimleriniz
+                              </div>
+                          </div>
+                      </a>
+                      <a (click)="passwordPopupVisible = true" class="action-list-item">
+                          <div class="action-list-item-icon">
+                              <i class="fa fa-key" aria-hidden="true"></i>
+                          </div>
+                          <div class="action-list-item-detail">
+                              <div class="action-list-item-detail-title">
+                                  Parola Değiştir
+                              </div>
+                              <div class="action-list-item-detail-desc">
+                                  Mevcut parolanızı değiştirebilirsiniz.
+                              </div>
+                          </div>
+                      </a>
+                      <div class="action-custom d-flex justify-content-end w-100 text-right py-1 bg-light ">
+                          <a href="javascript:;" (click)="authService.logoutWithRefresh()"
+                              class="btn btn-danger text-white">
+                              <i class="flaticon-logout"></i> Çıkış
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<div class="sub-top-bar" style="height: 36px;">
+  <div class="w-100 pr-4 d-flex justify-content-between align-items-center">
+    <div class="sub-header-left d-flex justify-content-between align-items-center">
+      <ul class="sub-header-breadcrumbs list-unstyled p-0 m-0">
+        <ng-container *ngIf="!breadCrumb">
+          <li>
+            Yönetim Paneli
+          </li>
+          <li class="active">
+            <span class="mx-1">/</span>
+            Ana Sayfa
+          </li>
+        </ng-container>
+       
+        <!--END OF STATIC CONTENT-->
+
+        <li *ngFor="let item of breadCrumb; let i = index" [ngClass]="{'active': i == (breadCrumb.length - 1)}">
+          <span class="mx-1" *ngIf="i != 0">/</span>{{item}}</li>
+      </ul>
+    </div>
+    <div class="sub-header-rigth d-flex justify-content-end align-items-center detail-holder">
+      <div class="d-flex justify-content-start align-items-center ml-3 pr-3" style="border-right: 1px solid #eff0f6;">
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <div class="text-left ml-2">
+          <b>
+            {{loginUser?.hostName}}
+          </b>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-start align-items-center ml-3">
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+        <div class="text-left ml-2">
+          <b>
+            {{loginUser?.ipAddress}}
+          </b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

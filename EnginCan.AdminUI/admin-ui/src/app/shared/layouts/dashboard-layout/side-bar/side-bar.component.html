@@ -1,0 +1,37 @@
+<nav class="menu-sidebar"
+  [ngClass]="{'mini-navbar': environment.isMiniNavbar, 'mobile': environment.isOpenMobileNavbar}">
+  <div class="top-header d-flex justify-content-between align-items-center pl-3">
+    <a [routerLink]="loginUser?.firstFireLink" class="logo">
+      <img  alt="Logo" class="py-2"
+      src="../../../../../assets/img/logo.png">
+    </a>
+    <a class="toggle" (click)="checkMiniNavbar()"></a>
+    <button type="button" (click)="openMobileMenu()" class="btn btn btn-primary btn-circle btn-icon w-100 mobile-close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="element-search autosuggest-search-activator mx-md-1">
+    <input placeholder="Menüde ara..." #searchMenu type="text" (keyup)="search($event)">
+  </div>
+  <ng-template #recursiveList let-menus>
+    <ul>
+
+      <ng-container *ngFor="let menu of menus; trackBy: trackByFn">
+        <li class="child-menu"
+          [ngClass]="{'active': selectedMenuId.indexOf(menu.id) > -1 || searchMenu.value.length > 2}">
+          <a [ngClass]="{'has-arrow': menu.childs.length > 0, 'has-main': menu.icon}"
+            [attr.aria-expanded]="selectedMenuId.indexOf(menu.id) > -1 || searchMenu.value.length > 2"
+            [routerLink]="menu.childs.length > 0 ? null : menu.allRouterLink"
+            (click)="selectMenu(menu.id, menu.childs.length)">
+            <i class="{{menu.icon}}" *ngIf="menu.icon"></i>
+            <span>{{menu.name}}</span>
+          </a>
+          <ng-container *ngTemplateOutlet="recursiveList; context:{ $implicit: menu.childs }"></ng-container>
+        </li>
+      </ng-container>
+
+    </ul>
+  </ng-template>
+
+  <ng-container *ngTemplateOutlet="recursiveList; context:{ $implicit: visibleMenus }"></ng-container>
+</nav>

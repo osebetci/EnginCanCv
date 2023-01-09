@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EnginCan.Core\EnginCan.Core.csproj" />
+    <ProjectReference Include="..\EnginCan.Dal\EnginCan.Dal.csproj" />
+    <ProjectReference Include="..\EnginCan.Dto\EnginCan.Dto.csproj" />
+    <ProjectReference Include="..\EnginCan.Entity\EnginCan.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="ValidationRule\FluentValidation\Systems\" />
+  </ItemGroup>
+</Project>

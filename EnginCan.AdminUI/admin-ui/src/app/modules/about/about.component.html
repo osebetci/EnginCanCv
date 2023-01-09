@@ -1,0 +1,98 @@
+<div class="content">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Hakkımda Bilgisi Ekle/Güncelle</h3>
+        </div>
+        <div class="card-body">
+          <div class="custom-form">
+            <form id="quickForm" [formGroup]="aboutForm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputName">Ad Soyad *</label>
+                      <input [(ngModel)]="about.fullName" type="text" name="fullName" required class="form-control"
+                        formControlName="fullName" id="exampleInputName" placeholder="İsim Soyisim Giriniz" required>
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.fullName.touched || submitted) && formControl.fullName.errors?.required">
+                        <sup>*</sup>Lütfen bir isim ve soyisim giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputSurname">Doğum Tarihi *</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                        </div>
+                     <!-- <p-inputMask class="form-control" [(ngModel)]="about.dogumTarih"  formControlName="dogumTarih" mask="dd/MM/yyyy"></p-inputMask>  -->
+                        <!-- <p-inputMask mask="99/99/9999"class="form-control" [(ngModel)]="about.dogumTarih"  formControlName="dogumTarih" placeholder="99/99/9999" slotChar="mm/dd/yyyy"></p-inputMask> -->
+
+
+                        <input type="date" class="form-control" id="start" name="trip-start" value="2018-07-22"
+                          min="2018-01-01" max="2050-12-31" [(ngModel)]="about.dogumTarih" formControlName="dogumTarih"> 
+                        <span class="text-danger ml-1"
+                          *ngIf="(formControl.dogumTarih.touched || submitted) && formControl.dogumTarih.errors?.required">
+                          <sup>*</sup>Lütfen bir tarih giriniz!
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="exampleInputName">İş Deneyim Süresi *</label>
+                      <input [(ngModel)]="about.deneyimSuresi" type="number" name="deneyimSuresi" required
+                        class="form-control" formControlName="deneyimSuresi" id="exampleInputName"
+                        placeholder="Deneyim Süresi Giriniz" required>
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.deneyimSuresi.touched || submitted) && formControl.deneyimSuresi.errors?.required">
+                        <sup>*</sup>Lütfen bir deneyim süresi giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputName">Mezuniyet Durum *</label>
+                      <input [(ngModel)]="about.mezuniyetDurum" type="text" name="mezuniyetDurum" required
+                        class="form-control" formControlName="mezuniyetDurum" id="exampleInputName"
+                        placeholder="Mezuniyet Durumunu Giriniz" required>
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.mezuniyetDurum.touched || submitted) && formControl.mezuniyetDurum.errors?.required">
+                        <sup>*</sup>Lütfen bir durum giriniz!
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Mail Adresi *</label>
+                      <input [(ngModel)]="about.email" type="email" name="email" required class="form-control"
+                        formControlName="email" id="exampleInputEmail1" placeholder="Mail Adresi Giriniz">
+                      <span class="text-danger ml-1"
+                        *ngIf="(formControl.email.touched || submitted) && formControl.email.errors?.required">
+                        <sup>*</sup>Lütfen geçerli bir mail adresi giriniz!
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Özet Hakkımda Yazısı *</label>
+                      <textarea [(ngModel)]="about.ozetMetin"  formControlName="ozetMetin"  placeholder="Özet Metin Giriniz" class="form-control" rows="7"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary"
+                  (click)="saveAbout()">{{about?.id?'Güncelle':'Kaydet'}}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

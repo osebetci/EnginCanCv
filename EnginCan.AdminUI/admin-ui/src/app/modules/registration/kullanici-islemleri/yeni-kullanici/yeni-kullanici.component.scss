@@ -1,0 +1,154 @@
+.custom-form .single-form input {
+    background-color: #f8f9fb;
+    border: 1px solid;
+    border-color: #dcdddd;
+  }
+  
+  .radio {
+    background-color: #f8f9fb;
+    height: 48px;
+    border: 1px solid;
+    border-color: #dcdddd;
+    border-radius: 5px;
+  }
+  
+  .form-check-input {
+    margin-top: 0;
+  
+  }
+  
+  .text-input {
+    height: 48px;
+  }
+  
+  .required::placeholder {
+    color: red;
+  }
+  
+  select {
+    height: 47px;
+  }
+  
+  option:disabled {
+    color: black !important;
+  }
+  
+  .custom-form .single-form textarea {
+    height: 83px;
+    background-color: #f8f9fb;
+    border: 1px solid;
+    border-color: #dcdddd;
+  }
+  
+  .bg-blue {
+    background-color: #243aaa;
+  }
+  
+  .form-label {
+    color: black;
+    margin-top: -17px;
+    margin-left: -12px;
+  }
+
+  .single-form {
+    margin-top: 20px;
+
+    select,
+    textarea,
+    input {
+      width: 100%;
+      /* height: 55px;*/
+      padding: 0 25px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #2b2a35;
+      border: 0;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    input[type="checkbox"],
+    input[type="file"] {
+      background: unset;
+    }
+
+    textarea {
+      resize: none;
+      padding-top: 15px;
+      height: 120px;
+      border: 0;
+      background-color: #fff;
+
+      &:focus {
+        border-color: #008bd2;
+      }
+    }
+
+    input:focus {
+      border-color: #008bd2;
+    }
+
+    .modern-select {
+      position: relative;
+      margin-left: 3px;
+      margin-bottom: 0;
+
+      select {
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        display: inline-block;
+        background-color: unset;
+        margin: 0;
+        outline: none;
+        height: 48px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        option {
+          outline: none;
+        }
+      }
+
+      &:after {
+        content: "\f078";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 11px;
+        line-height: 40px;
+        color: #b1b1b1;
+      }
+    }
+    .main-btn {
+      border: 2px solid #fff;
+      height: 50px;
+      line-height: 46px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .jumbotron h3 {
+      font-size: 18px !important;
+      margin-top: -120px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .jumbotron h3 {
+      font-size: 18px !important;
+      margin-top: -120px;
+    }
+  }
+  
